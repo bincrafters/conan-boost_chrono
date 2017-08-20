@@ -6,6 +6,7 @@ class BoostChronoConan(ConanFile):
     version = "1.64.0"
     generators = "txt", "boost"
     settings = "os", "arch", "compiler", "build_type"
+    short_paths = True
     url = "https://github.com/bincrafters/conan-boost-chrono"
     source_url = "https://github.com/boostorg/chrono"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
@@ -32,7 +33,7 @@ class BoostChronoConan(ConanFile):
 
     def source(self):
         for lib_short_name in self.lib_short_names:
-            self.run("git clone --depth=50 --branch=boost-{0} https://github.com/boostorg/{1}.git"
+            self.run("git clone --depth=1 --branch=boost-{0} https://github.com/boostorg/{1}.git"
                      .format(self.version, lib_short_name)) 
     
     def build(self):
