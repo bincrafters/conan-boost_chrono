@@ -13,7 +13,7 @@ class BoostChronoConan(ConanFile):
     lib_short_names = ["chrono"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Build/1.64.0@bincrafters/testing", "Boost.Generator/0.0.1@bincrafters/testing"
+    build_requires = "Boost.Build/1.64.0@bincrafters/testing", "Boost.Generator/1.64.0@bincrafters/testing"
     requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
                       "Boost.Config/1.64.0@bincrafters/testing", \
                       "Boost.Core/1.64.0@bincrafters/testing", \
