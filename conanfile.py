@@ -3,32 +3,32 @@ from conans import ConanFile, tools, os
 
 class BoostChronoConan(ConanFile):
     name = "Boost.Chrono"
-    version = "1.64.0"
+    version = "1.65.1"
     generators =  "boost"
     settings = "os", "arch", "compiler", "build_type"
     short_paths = True
     url = "https://github.com/bincrafters/conan-boost-chrono"
-    description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["chrono"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Build/1.64.0@bincrafters/testing", "Boost.Generator/0.0.1@bincrafters/testing"
-    requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
-                      "Boost.Config/1.64.0@bincrafters/testing", \
-                      "Boost.Core/1.64.0@bincrafters/testing", \
-                      "Boost.Integer/1.64.0@bincrafters/testing", \
-                      "Boost.Move/1.64.0@bincrafters/testing", \
-                      "Boost.Mpl/1.64.0@bincrafters/testing", \
-                      "Boost.Predef/1.64.0@bincrafters/testing", \
-                      "Boost.Ratio/1.64.0@bincrafters/testing", \
-                      "Boost.Static_Assert/1.64.0@bincrafters/testing", \
-                      "Boost.System/1.64.0@bincrafters/testing", \
-                      "Boost.Throw_Exception/1.64.0@bincrafters/testing", \
-                      "Boost.Type_Traits/1.64.0@bincrafters/testing", \
-                      "Boost.Typeof/1.64.0@bincrafters/testing", \
-                      "Boost.Utility/1.64.0@bincrafters/testing", \
-                      "Boost.Winapi/1.64.0@bincrafters/testing"
+    build_requires = "Boost.Build/1.65.1@bincrafters/testing", "Boost.Generator/0.0.1@bincrafters/testing"
+    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
+                      "Boost.Config/1.65.1@bincrafters/testing", \
+                      "Boost.Core/1.65.1@bincrafters/testing", \
+                      "Boost.Integer/1.65.1@bincrafters/testing", \
+                      "Boost.Move/1.65.1@bincrafters/testing", \
+                      "Boost.Mpl/1.65.1@bincrafters/testing", \
+                      "Boost.Predef/1.65.1@bincrafters/testing", \
+                      "Boost.Ratio/1.65.1@bincrafters/testing", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
+                      "Boost.System/1.65.1@bincrafters/testing", \
+                      "Boost.Throw_Exception/1.65.1@bincrafters/testing", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
+                      "Boost.Typeof/1.65.1@bincrafters/testing", \
+                      "Boost.Utility/1.65.1@bincrafters/testing", \
+                      "Boost.Winapi/1.65.1@bincrafters/testing"
 
                       #assert1 config0 core2 integer3 move3 mpl5 predef0 ratio7 static_assert1 system3 throw_exception2 type_traits3 typeof5 utility5 winapi1
 
