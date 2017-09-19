@@ -13,22 +13,22 @@ class BoostChronoConan(ConanFile):
     lib_short_names = ["chrono"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Build/1.65.1@bincrafters/testing", "Boost.Generator/1.65.1@bincrafters/testing"
-    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
-                      "Boost.Config/1.65.1@bincrafters/testing", \
-                      "Boost.Core/1.65.1@bincrafters/testing", \
-                      "Boost.Integer/1.65.1@bincrafters/testing", \
-                      "Boost.Move/1.65.1@bincrafters/testing", \
-                      "Boost.Mpl/1.65.1@bincrafters/testing", \
-                      "Boost.Predef/1.65.1@bincrafters/testing", \
-                      "Boost.Ratio/1.65.1@bincrafters/testing", \
-                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
-                      "Boost.System/1.65.1@bincrafters/testing", \
-                      "Boost.Throw_Exception/1.65.1@bincrafters/testing", \
-                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
-                      "Boost.Typeof/1.65.1@bincrafters/testing", \
-                      "Boost.Utility/1.65.1@bincrafters/testing", \
-                      "Boost.Winapi/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Build/1.65.1@bincrafters/stable", "Boost.Generator/1.65.1@bincrafters/stable"
+    requires =  "Boost.Assert/1.65.1@bincrafters/stable", \
+                      "Boost.Config/1.65.1@bincrafters/stable", \
+                      "Boost.Core/1.65.1@bincrafters/stable", \
+                      "Boost.Integer/1.65.1@bincrafters/stable", \
+                      "Boost.Move/1.65.1@bincrafters/stable", \
+                      "Boost.Mpl/1.65.1@bincrafters/stable", \
+                      "Boost.Predef/1.65.1@bincrafters/stable", \
+                      "Boost.Ratio/1.65.1@bincrafters/stable", \
+                      "Boost.Static_Assert/1.65.1@bincrafters/stable", \
+                      "Boost.System/1.65.1@bincrafters/stable", \
+                      "Boost.Throw_Exception/1.65.1@bincrafters/stable", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/stable", \
+                      "Boost.Typeof/1.65.1@bincrafters/stable", \
+                      "Boost.Utility/1.65.1@bincrafters/stable", \
+                      "Boost.Winapi/1.65.1@bincrafters/stable"
 
                       #assert1 config0 core2 integer3 move3 mpl5 predef0 ratio7 static_assert1 system3 throw_exception2 type_traits3 typeof5 utility5 winapi1
 
