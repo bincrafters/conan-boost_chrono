@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostChronoConan(ConanFile):
     name = "boost_chrono"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-chrono"
+    url = "https://github.com/bincrafters/conan-boost_chrono"
 
     lib_short_names = ["chrono"]
     is_header_only = False
