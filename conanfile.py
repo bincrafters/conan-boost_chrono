@@ -17,22 +17,22 @@ class BoostChronoConan(ConanFile):
     default_options = "shared=False"
 
     requires = (
-        "boost_package_tools/1.65.1@bincrafters/testing",
-        "boost_assert/1.65.1@bincrafters/testing",
-        "boost_config/1.65.1@bincrafters/testing",
-        "boost_core/1.65.1@bincrafters/testing",
-        "boost_integer/1.65.1@bincrafters/testing",
-        "boost_move/1.65.1@bincrafters/testing",
-        "boost_mpl/1.65.1@bincrafters/testing",
-        "boost_predef/1.65.1@bincrafters/testing",
-        "boost_ratio/1.65.1@bincrafters/testing",
-        "boost_static_assert/1.65.1@bincrafters/testing",
-        "boost_system/1.65.1@bincrafters/testing",
-        "boost_throw_exception/1.65.1@bincrafters/testing",
-        "boost_type_traits/1.65.1@bincrafters/testing",
-        "boost_typeof/1.65.1@bincrafters/testing",
-        "boost_utility/1.65.1@bincrafters/testing",
-        "boost_winapi/1.65.1@bincrafters/testing"
+        "boost_package_tools/1.65.1@bincrafters/stable",
+        "boost_assert/1.65.1@bincrafters/stable",
+        "boost_config/1.65.1@bincrafters/stable",
+        "boost_core/1.65.1@bincrafters/stable",
+        "boost_integer/1.65.1@bincrafters/stable",
+        "boost_move/1.65.1@bincrafters/stable",
+        "boost_mpl/1.65.1@bincrafters/stable",
+        "boost_predef/1.65.1@bincrafters/stable",
+        "boost_ratio/1.65.1@bincrafters/stable",
+        "boost_static_assert/1.65.1@bincrafters/stable",
+        "boost_system/1.65.1@bincrafters/stable",
+        "boost_throw_exception/1.65.1@bincrafters/stable",
+        "boost_type_traits/1.65.1@bincrafters/stable",
+        "boost_typeof/1.65.1@bincrafters/stable",
+        "boost_utility/1.65.1@bincrafters/stable",
+        "boost_winapi/1.65.1@bincrafters/stable"
     )
 
     def package_id_additional(self):
@@ -48,7 +48,7 @@ class BoostChronoConan(ConanFile):
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.65.1@bincrafters/testing"
+    build_requires = "boost_generator/1.65.1@bincrafters/stable"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
