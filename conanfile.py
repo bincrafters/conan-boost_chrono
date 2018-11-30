@@ -4,14 +4,14 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostChronoConan(base.BoostBaseConan):
     name = "boost_chrono"
     url = "https://github.com/bincrafters/conan-boost_chrono"
     lib_short_names = ["chrono"]
     options = {"shared": [True, False]}
-    default_options = "shared=False"    
+    default_options = "shared=False"
     b2_requires = [
         "boost_assert",
         "boost_config",
@@ -29,5 +29,3 @@ class BoostChronoConan(base.BoostBaseConan):
         "boost_utility",
         "boost_winapi"
     ]
-
-
