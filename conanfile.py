@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.67.0@bincrafters/testing")
 
 class BoostChronoConan(base.BoostBaseConan):
     name = "boost_chrono"
+    version = "1.67.0"
     url = "https://github.com/bincrafters/conan-boost_chrono"
     lib_short_names = ["chrono"]
     options = {"shared": [True, False]}
